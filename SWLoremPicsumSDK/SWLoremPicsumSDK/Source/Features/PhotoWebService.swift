@@ -10,6 +10,8 @@ import Foundation
 
 public class PhotoWebService {
 
+    public init () {}
+    
     public func photo() -> String {
         return "👏 To be implemented "
     }

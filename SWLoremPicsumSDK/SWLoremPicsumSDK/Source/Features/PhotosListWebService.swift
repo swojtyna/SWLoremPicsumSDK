@@ -10,7 +10,9 @@ import Foundation
 
 public class PhotosListWebService {
 
-    public func photo() -> [String] {
+    public init () {}
+
+    public func photos() -> [String] {
         return ["💀 To be implemented ",
                 "🎉 To be implemented ",
                 "🐥 To be implemented "]
