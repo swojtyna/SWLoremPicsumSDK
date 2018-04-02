@@ -10,6 +10,8 @@
 		A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */; };
 		A26F9C232072339E00795679 /* SWLoremPicsumSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */; };
 		A26F9C252072339E00795679 /* SWLoremPicsumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3320723B5F00795679 /* PhotoWebService.swift */; };
+		A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3520723B8800795679 /* PhotosListWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A26F9C1D2072339E00795679 /* SWLoremPicsumSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWLoremPicsumSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLoremPicsumSDKTests.swift; sourceTree = "<group>"; };
 		A26F9C242072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26F9C3320723B5F00795679 /* PhotoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebService.swift; sourceTree = "<group>"; };
+		A26F9C3520723B8800795679 /* PhotosListWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,8 @@
 		A26F9C162072339E00795679 /* SWLoremPicsumSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */,
-				A26F9C182072339E00795679 /* Info.plist */,
+				A26F9C2F207238E700795679 /* Source */,
+				A26F9C31207239B900795679 /* Supporting Files */,
 			);
 			path = SWLoremPicsumSDK;
 			sourceTree = "<group>";
@@ -84,6 +88,32 @@
 				A26F9C242072339E00795679 /* Info.plist */,
 			);
 			path = SWLoremPicsumSDKTests;
+			sourceTree = "<group>";
+		};
+		A26F9C2F207238E700795679 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A26F9C32207239CE00795679 /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A26F9C31207239B900795679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */,
+				A26F9C182072339E00795679 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A26F9C32207239CE00795679 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A26F9C3320723B5F00795679 /* PhotoWebService.swift */,
+				A26F9C3520723B8800795679 /* PhotosListWebService.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +179,7 @@
 				TargetAttributes = {
 					A26F9C132072339E00795679 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					A26F9C1C2072339E00795679 = {
 						CreatedOnToolsVersion = 9.3;
@@ -212,6 +243,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */,
+				A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +390,7 @@
 		A26F9C292072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +407,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +416,7 @@
 		A26F9C2A2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -405,6 +441,7 @@
 		A26F9C2C2072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,6 +459,7 @@
 		A26F9C2D2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
