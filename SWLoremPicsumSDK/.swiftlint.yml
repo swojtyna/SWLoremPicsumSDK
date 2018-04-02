@@ -16,6 +16,8 @@ disabled_rules:
   - force_cast
 excluded:
   - LeadTheBlock/Extensions/SKTUtils
+  - Carthage
+  - Pods
 
 custom_rules:
   smiley_face:

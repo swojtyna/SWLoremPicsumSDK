@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */; };
+		228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */; };
 		A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */; };
 		A26F9C232072339E00795679 /* SWLoremPicsumSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */; };
 		A26F9C252072339E00795679 /* SWLoremPicsumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3320723B5F00795679 /* PhotoWebService.swift */; };
 		A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3520723B8800795679 /* PhotosListWebService.swift */; };
+		A28462E1207268A00048F4B1 /* PhotoElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28462E0207268A00048F4B1 /* PhotoElement.swift */; };
+		A28462E4207269A30048F4B1 /* LoremPicsumServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWLoremPicsumSDK.h; sourceTree = "<group>"; };
 		A26F9C182072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +41,10 @@
 		A26F9C242072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26F9C3320723B5F00795679 /* PhotoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebService.swift; sourceTree = "<group>"; };
 		A26F9C3520723B8800795679 /* PhotosListWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListWebService.swift; sourceTree = "<group>"; };
+		A28462E0207268A00048F4B1 /* PhotoElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoElement.swift; sourceTree = "<group>"; };
+		A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremPicsumServerAPI.swift; sourceTree = "<group>"; };
+		DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,18 +61,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */,
+				130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D3867E54FE7C97846B7A86C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */,
+				E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */,
+				9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */,
+				631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A26F9C0A2072339E00795679 = {
 			isa = PBXGroup;
 			children = (
 				A26F9C162072339E00795679 /* SWLoremPicsumSDK */,
 				A26F9C212072339E00795679 /* SWLoremPicsumSDKTests */,
 				A26F9C152072339E00795679 /* Products */,
+				8D3867E54FE7C97846B7A86C /* Pods */,
+				F0FBBDA89E1FC604411DB0D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				A26F9C32207239CE00795679 /* Features */,
+				A28462E2207269160048F4B1 /* Networking */,
+				A28462DF2072687A0048F4B1 /* Parser */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -116,6 +145,39 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		A28462DE207268670048F4B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A28462E0207268A00048F4B1 /* PhotoElement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A28462DF2072687A0048F4B1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				A28462DE207268670048F4B1 /* Models */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		A28462E2207269160048F4B1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F0FBBDA89E1FC604411DB0D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */,
+				9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -134,11 +196,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26F9C282072339E00795679 /* Build configuration list for PBXNativeTarget "SWLoremPicsumSDK" */;
 			buildPhases = (
+				B664A03875E4829C28523E71 /* [CP] Check Pods Manifest.lock */,
 				A26F9C0F2072339E00795679 /* Sources */,
 				A26F9C102072339E00795679 /* Frameworks */,
 				A26F9C112072339E00795679 /* Headers */,
 				A26F9C122072339E00795679 /* Resources */,
 				A26F9C2E2072353B00795679 /* SwiftLint */,
+				1951778AAB797BF6FC9940D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26F9C2B2072339E00795679 /* Build configuration list for PBXNativeTarget "SWLoremPicsumSDKTests" */;
 			buildPhases = (
+				6A00432242061CC018ED4EFF /* [CP] Check Pods Manifest.lock */,
 				A26F9C192072339E00795679 /* Sources */,
 				A26F9C1A2072339E00795679 /* Frameworks */,
 				A26F9C1B2072339E00795679 /* Resources */,
+				AF07D767E0F18D9D43CE35E8 /* [CP] Embed Pods Frameworks */,
+				6917455B65FAD25225DCB9B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +289,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1951778AAB797BF6FC9940D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6917455B65FAD25225DCB9B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A00432242061CC018ED4EFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWLoremPicsumSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A26F9C2E2072353B00795679 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,6 +351,46 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		AF07D767E0F18D9D43CE35E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B664A03875E4829C28523E71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWLoremPicsumSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,7 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A28462E1207268A00048F4B1 /* PhotoElement.swift in Sources */,
 				A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */,
+				A28462E4207269A30048F4B1 /* LoremPicsumServerAPI.swift in Sources */,
 				A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +546,7 @@
 		};
 		A26F9C292072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -400,11 +558,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SWLoremPicsumSDK/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -418,6 +572,7 @@
 		};
 		A26F9C2A2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -429,11 +584,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SWLoremPicsumSDK/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -446,15 +597,12 @@
 		};
 		A26F9C2C2072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -464,15 +612,12 @@
 		};
 		A26F9C2D2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
