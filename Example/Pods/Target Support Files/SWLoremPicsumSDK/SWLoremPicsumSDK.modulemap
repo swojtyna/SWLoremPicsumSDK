@@ -1,0 +1,6 @@
+framework module SWLoremPicsumSDK {
+  umbrella header "SWLoremPicsumSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

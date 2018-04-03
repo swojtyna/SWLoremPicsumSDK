@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.7.1)
+  - Moya (11.0.2):
+    - Moya/Core (= 11.0.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.4)
+  - SWLoremPicsumSDK (0.0.2):
+    - Moya (~> 11.0)
+
+DEPENDENCIES:
+  - SWLoremPicsumSDK (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SWLoremPicsumSDK: c1713b4b95ca0685b76f3594776df55e295d8c4e
+
+PODFILE CHECKSUM: 1cd516d9ac33e2e554e5f2a37873df6be6a76b4a
+
+COCOAPODS: 1.4.0
