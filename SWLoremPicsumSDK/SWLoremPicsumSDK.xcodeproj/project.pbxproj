@@ -102,7 +102,7 @@
 		A26F9C162072339E00795679 /* SWLoremPicsumSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A26F9C2F207238E700795679 /* Source */,
+				A26F9C2F207238E700795679 /* Sources */,
 				A26F9C31207239B900795679 /* Supporting Files */,
 			);
 			path = SWLoremPicsumSDK;
@@ -117,14 +117,14 @@
 			path = SWLoremPicsumSDKTests;
 			sourceTree = "<group>";
 		};
-		A26F9C2F207238E700795679 /* Source */ = {
+		A26F9C2F207238E700795679 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A26F9C32207239CE00795679 /* Features */,
 				A28462E2207269160048F4B1 /* Networking */,
 				A28462DF2072687A0048F4B1 /* Parser */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A26F9C31207239B900795679 /* Supporting Files */ = {
@@ -558,7 +558,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SWLoremPicsumSDK/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -584,7 +588,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SWLoremPicsumSDK/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -602,7 +610,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -617,7 +629,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWLoremPicsumSDKTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
