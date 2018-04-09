@@ -13,32 +13,30 @@ class SWLoremPicsumSDKTests: XCTestCase {
 
     func testPhoto() {
         let photoExpectation = expectation(description: "Get photo with success")
-        PhotoWebService().photo { result in
+        PhotoWebService().photo(photoId: "2", width: 200, height: 300) { result in
             switch result {
-            case .success(let image):
-                print("image \(image)")
+            case .success:
                 photoExpectation.fulfill()
             case .failure(let error):
-                print("⛔️ \(error)")
+                XCTFail("Error: \(error)")
             }
         }
 
-        waitForExpectations(timeout: 2.5)
+        waitForExpectations(timeout: 1.5)
     }
 
     func testPhotosList() {
-        let photosListExpectation = expectation(description: "Get photo with success")
+        let photosListExpectation = expectation(description: "Get photos lits with success")
         PhotosListWebService().photosList { result in
             switch result {
-            case .success(let photoElements):
-                print("photoElements count \(photoElements.count)")
+            case .success:
                 photosListExpectation.fulfill()
             case .failure(let error):
-                print("⛔️ \(error)")
+                XCTFail("Error: \(error)")
             }
         }
 
-        waitForExpectations(timeout: 2.5)
+        waitForExpectations(timeout: 1.5)
     }
 
 }

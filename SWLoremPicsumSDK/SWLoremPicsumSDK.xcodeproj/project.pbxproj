@@ -14,8 +14,12 @@
 		A26F9C252072339E00795679 /* SWLoremPicsumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3320723B5F00795679 /* PhotoWebService.swift */; };
 		A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3520723B8800795679 /* PhotosListWebService.swift */; };
+		A274B058207C13FE00A57D0E /* SWError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A274B057207C13FE00A57D0E /* SWError.swift */; };
 		A28462E1207268A00048F4B1 /* PhotoElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28462E0207268A00048F4B1 /* PhotoElement.swift */; };
-		A28462E4207269A30048F4B1 /* LoremPicsumServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */; };
+		A2960C1120776CCF00A05770 /* PhotoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C1020776CCF00A05770 /* PhotoEndpoint.swift */; };
+		A2960C1320776D1400A05770 /* PhotosListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */; };
+		A2960C152077715100A05770 /* PhotoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C142077715100A05770 /* PhotoParser.swift */; };
+		A2960C172077715F00A05770 /* PhotosListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C162077715F00A05770 /* PhotosListParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,12 @@
 		A26F9C242072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26F9C3320723B5F00795679 /* PhotoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebService.swift; sourceTree = "<group>"; };
 		A26F9C3520723B8800795679 /* PhotosListWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListWebService.swift; sourceTree = "<group>"; };
+		A274B057207C13FE00A57D0E /* SWError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWError.swift; sourceTree = "<group>"; };
 		A28462E0207268A00048F4B1 /* PhotoElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoElement.swift; sourceTree = "<group>"; };
-		A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoremPicsumServerAPI.swift; sourceTree = "<group>"; };
+		A2960C1020776CCF00A05770 /* PhotoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEndpoint.swift; sourceTree = "<group>"; };
+		A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListEndpoint.swift; sourceTree = "<group>"; };
+		A2960C142077715100A05770 /* PhotoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoParser.swift; sourceTree = "<group>"; };
+		A2960C162077715F00A05770 /* PhotosListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListParser.swift; sourceTree = "<group>"; };
 		DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +128,7 @@
 		A26F9C2F207238E700795679 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A274B056207C13E600A57D0E /* Error */,
 				A26F9C32207239CE00795679 /* Features */,
 				A28462E2207269160048F4B1 /* Networking */,
 				A28462DF2072687A0048F4B1 /* Parser */,
@@ -145,6 +154,14 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		A274B056207C13E600A57D0E /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A274B057207C13FE00A57D0E /* SWError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		A28462DE207268670048F4B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				A28462DE207268670048F4B1 /* Models */,
+				A2960C142077715100A05770 /* PhotoParser.swift */,
+				A2960C162077715F00A05770 /* PhotosListParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -164,7 +183,8 @@
 		A28462E2207269160048F4B1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A28462E3207269A30048F4B1 /* LoremPicsumServerAPI.swift */,
+				A2960C1020776CCF00A05770 /* PhotoEndpoint.swift */,
+				A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -399,9 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28462E1207268A00048F4B1 /* PhotoElement.swift in Sources */,
+				A2960C1120776CCF00A05770 /* PhotoEndpoint.swift in Sources */,
+				A2960C1320776D1400A05770 /* PhotosListEndpoint.swift in Sources */,
 				A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */,
-				A28462E4207269A30048F4B1 /* LoremPicsumServerAPI.swift in Sources */,
+				A274B058207C13FE00A57D0E /* SWError.swift in Sources */,
 				A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */,
+				A2960C152077715100A05770 /* PhotoParser.swift in Sources */,
+				A2960C172077715F00A05770 /* PhotosListParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

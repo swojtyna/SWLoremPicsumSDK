@@ -8,13 +8,10 @@
 
 import Foundation
 
-// This file has been generated form https://app.quicktype.io/
-//
-// To parse the JSON, add this file to your project and do:
-//
-//   let photo = try? JSONDecoder().decode(Photo.self, from: jsonData)
-
-public typealias Photo = [PhotoElement]
+enum Format: String, Codable {
+    case jpeg
+    case png
+}
 
 public struct PhotoElement: Codable {
     let format: Format
@@ -28,9 +25,4 @@ public struct PhotoElement: Codable {
         case authorURL = "author_url"
         case postURL = "post_url"
     }
-}
-
-enum Format: String, Codable {
-    case jpeg
-    case png
 }
