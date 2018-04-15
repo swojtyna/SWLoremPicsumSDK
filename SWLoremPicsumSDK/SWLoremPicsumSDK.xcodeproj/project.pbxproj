@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */; };
 		228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */; };
+		A243C0292083E1C80094E8CB /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243C0282083E1C80094E8CB /* PhotoRequest.swift */; };
+		A243C02B2083E71E0094E8CB /* PhotosListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */; };
 		A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */; };
 		A26F9C232072339E00795679 /* SWLoremPicsumSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */; };
 		A26F9C252072339E00795679 /* SWLoremPicsumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +39,8 @@
 		78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A243C0282083E1C80094E8CB /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListRequest.swift; sourceTree = "<group>"; };
 		A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWLoremPicsumSDK.h; sourceTree = "<group>"; };
 		A26F9C182072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +89,25 @@
 				631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A243C0262083E18D0094E8CB /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A2960C1020776CCF00A05770 /* PhotoEndpoint.swift */,
+				A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		A243C0272083E1930094E8CB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A243C0282083E1C80094E8CB /* PhotoRequest.swift */,
+				A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */,
+			);
+			name = Requests;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A26F9C0A2072339E00795679 = {
@@ -183,8 +206,8 @@
 		A28462E2207269160048F4B1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A2960C1020776CCF00A05770 /* PhotoEndpoint.swift */,
-				A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */,
+				A243C0262083E18D0094E8CB /* Endpoints */,
+				A243C0272083E1930094E8CB /* Requests */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -422,9 +445,11 @@
 				A2960C1120776CCF00A05770 /* PhotoEndpoint.swift in Sources */,
 				A2960C1320776D1400A05770 /* PhotosListEndpoint.swift in Sources */,
 				A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */,
+				A243C02B2083E71E0094E8CB /* PhotosListRequest.swift in Sources */,
 				A274B058207C13FE00A57D0E /* SWError.swift in Sources */,
 				A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */,
 				A2960C152077715100A05770 /* PhotoParser.swift in Sources */,
+				A243C0292083E1C80094E8CB /* PhotoRequest.swift in Sources */,
 				A2960C172077715F00A05770 /* PhotosListParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

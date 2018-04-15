@@ -14,18 +14,19 @@ public typealias PhotosListWebServiceCompletion = (_ result: Result<[PhotoElemen
 
 public class PhotosListWebService {
 
-    private let provider: MoyaProvider<PhotosListEndpoint>
-    private var cancellable: Cancellable?
+    private let request: PhotosListRequest
+    private let parser: PhotosListParser
 
     public init() {
-        provider = MoyaProvider<PhotosListEndpoint>()
+        request = PhotosListRequest()
+        parser = PhotosListParser()
     }
 
     public func photosList(completion: @escaping PhotosListWebServiceCompletion) {
-        cancellable = provider.request(.photosList) { result in
+        request.send { result in
             switch result {
             case .success(let response):
-                PhotosListParser().parse(response.data, completion: completion)
+                self.parser.parse(response.data, completion: completion)
             case .failure(let error):
                 completion(.failure(.webServiceError(reason: .moyaError(error: error))))
             }
@@ -33,7 +34,7 @@ public class PhotosListWebService {
     }
 
     public func cancel() {
-        cancellable?.cancel()
+        request.cancel()
     }
 
 }

@@ -14,27 +14,27 @@ public typealias PhotoWebServiceCompletion = (_ result: Result<UIImage, SWError>
 
 public class PhotoWebService {
 
-    private let provider: MoyaProvider<PhotoEndpoint>
-    private var cancellable: Cancellable?
+    private let request: PhotoRequest
+    private let parser: PhotoParser
 
     public init() {
-        provider = MoyaProvider<PhotoEndpoint>()
+        request = PhotoRequest()
+        parser = PhotoParser()
     }
 
     public func photo(photoId: String, width: Int, height: Int, completion: @escaping PhotoWebServiceCompletion) {
-        cancellable = provider.request(.photo(photoId: photoId, width: width, height: height)) { result in
+        request.send(photoId: photoId, width: width, height: height) { result in
             switch result {
             case .success(let response):
-                PhotoParser().parse(response.data, completion: completion)
+                self.parser.parse(response.data, completion: completion)
             case .failure(let error):
                 completion(.failure(.webServiceError(reason: .moyaError(error: error))))
             }
         }
-
     }
 
     public func cancel() {
-        cancellable?.cancel()
+        request.cancel()
     }
 
 }
