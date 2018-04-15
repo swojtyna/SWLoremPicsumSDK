@@ -12,5 +12,6 @@ end
 
 target 'SWLoremPicsumSDKTests' do
   standard_pods
+  pod 'OHHTTPStubs/Swift' # includes the Default subspec, with support for NSURLSession & JSON, and the Swiftier API wrappers
 end
 

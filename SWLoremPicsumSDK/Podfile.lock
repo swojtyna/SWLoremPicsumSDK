@@ -5,16 +5,31 @@ PODS:
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - OHHTTPStubs/Core (6.1.0)
+  - OHHTTPStubs/Default (6.1.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (6.1.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (6.1.0)
+  - OHHTTPStubs/Swift (6.1.0):
+    - OHHTTPStubs/Default
   - Result (3.2.4)
 
 DEPENDENCIES:
   - Moya (~> 11.0)
+  - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
   Moya: a725035953bc1c0eb1be505ab903984501d82440
+  OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 50d941c3dd60b77d7f55463820c714a08bd25df8
+PODFILE CHECKSUM: e3755cc9dfeda186b3ddbc1cb8ea3eb7c593e58f
 
 COCOAPODS: 1.4.0
