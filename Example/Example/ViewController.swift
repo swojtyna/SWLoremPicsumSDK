@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
         print("Welcome 😀")
 
-        PhotoWebService().photo { result in
+        PhotoWebService().photo(photoId: "5", width: 200, height: 500) { result in
             switch result {
             case .success(let image):
                 print("👻 Recived image: \(image)")

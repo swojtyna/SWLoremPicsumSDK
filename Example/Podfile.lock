@@ -1,23 +1,30 @@
 PODS:
-  - Alamofire (4.7.1)
+  - Alamofire (4.7.2)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - Result (3.2.4)
-  - SWLoremPicsumSDK (0.0.2):
+  - SWLoremPicsumSDK (0.0.3):
     - Moya (~> 11.0)
 
 DEPENDENCIES:
-  - SWLoremPicsumSDK (~> 0.0.2)
+  - SWLoremPicsumSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Moya
+    - Result
+    - SWLoremPicsumSDK
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  SWLoremPicsumSDK: c1713b4b95ca0685b76f3594776df55e295d8c4e
+  SWLoremPicsumSDK: 17c821aafebc79a5788f7488813e0d5eab05a740
 
-PODFILE CHECKSUM: 1cd516d9ac33e2e554e5f2a37873df6be6a76b4a
+PODFILE CHECKSUM: db6ae326e69c919da0fcf65398402357a242aecb
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

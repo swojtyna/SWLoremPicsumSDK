@@ -8,42 +8,37 @@
 
 import Foundation
 import Moya
+import Result
 
-public enum PhotosListResult {
-    case success([PhotoElement])
-    case failure(Error)
-}
-
-public typealias PhotosListCompletion = (_ result: PhotosListResult) -> Void
+public typealias PhotosListWebServiceCompletion = (_ result: Result<[PhotoElement], SWError>) -> Void
 
 public class PhotosListWebService {
 
-    public init() {}
+    private let request: PhotosListRequestProtocol
+    private let parser: PhotosListParserProtocol
 
-    public func photosList(completion: @escaping PhotosListCompletion) {
+    public init(request: PhotosListRequestProtocol, parser: PhotosListParserProtocol) {
+        self.request = request
+        self.parser = parser
+    }
 
-        let provider = MoyaProvider<LoremPicsumServerAPI>()
-        //        provider.request(.photo(photoId: "2", width: 200, height: 300)) { (result) in
-        provider.request(.photosList) { result in
+    public convenience init() {
+        self.init(request: PhotosListRequest(), parser: PhotosListParser())
+    }
+
+    public func photosList(completion: @escaping PhotosListWebServiceCompletion) {
+        request.send { result in
             switch result {
             case .success(let response):
-                print("✋ response \(response)")
-                print("✋✋ response \(response.data)")
-
-                if let photo = try? JSONDecoder().decode(Photo.self, from: response.data) {
-                    completion(.success(photo))
-                } else {
-                    completion(.failure(NSError(domain: "Parse error", code: 999, userInfo: nil)))
-                }
-                //                completion(.success([]))
-
+                self.parser.parse(response.data, completion: completion)
             case .failure(let error):
-                print("✋ error \(error)")
-                completion(.failure(error))
-
+                completion(.failure(.webServiceError(reason: .moyaError(error: error))))
             }
         }
+    }
 
+    public func cancel() {
+        request.cancel()
     }
 
 }

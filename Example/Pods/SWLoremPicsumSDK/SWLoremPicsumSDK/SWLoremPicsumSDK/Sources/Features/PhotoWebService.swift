@@ -8,38 +8,37 @@
 
 import Foundation
 import Moya
+import Result
 
-public enum PhotoWebServiceResult {
-    case success(UIImage)
-    case failure(Error)
-}
-
-public typealias Completion = (_ result: PhotoWebServiceResult) -> Void
+public typealias PhotoWebServiceCompletion = (_ result: Result<UIImage, SWError>) -> Void
 
 public class PhotoWebService {
 
-    public init() {}
+    private let request: PhotoRequestProtocol
+    private let parser: PhotoParserProtocol
 
-    public func photo(completion: @escaping Completion) {
+    public init(request: PhotoRequestProtocol, parser: PhotoParserProtocol) {
+        self.request = request
+        self.parser = parser
+    }
 
-        let provider = MoyaProvider<LoremPicsumServerAPI>()
-        provider.request(.photo(photoId: "2", width: 200, height: 300)) { result in
+    public convenience init() {
+        self.init(request: PhotoRequest(), parser: PhotoParser())
+    }
+
+    public func photo(photoId: String, width: Int, height: Int, completion: @escaping PhotoWebServiceCompletion) {
+        request.send(photoId: photoId, width: width, height: height) { result in
             switch result {
             case .success(let response):
-                print("✋ response \(response)")
-                print("✋ response \(response.data)")
-                if let image = UIImage(data: response.data) {
-                    completion(.success(image))
-                } else {
-                    completion(.failure(NSError(domain: "Parse error", code: 999, userInfo: nil)))
-                }
-
+                self.parser.parse(response.data, completion: completion)
             case .failure(let error):
-                print("✋ error \(error)")
-                completion(.failure(error))
-
+                completion(.failure(.webServiceError(reason: .moyaError(error: error))))
             }
         }
+    }
+
+    public func cancel() {
+        request.cancel()
     }
 
 }
