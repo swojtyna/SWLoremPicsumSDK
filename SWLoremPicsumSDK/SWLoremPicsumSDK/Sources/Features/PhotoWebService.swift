@@ -14,12 +14,16 @@ public typealias PhotoWebServiceCompletion = (_ result: Result<UIImage, SWError>
 
 public class PhotoWebService {
 
-    private let request: PhotoRequest
-    private let parser: PhotoParser
+    private let request: PhotoRequestProtocol
+    private let parser: PhotoParserProtocol
 
-    public init() {
-        request = PhotoRequest()
-        parser = PhotoParser()
+    public init(request: PhotoRequestProtocol, parser: PhotoParserProtocol) {
+        self.request = request
+        self.parser = parser
+    }
+
+    public convenience init() {
+        self.init(request: PhotoRequest(), parser: PhotoParser())
     }
 
     public func photo(photoId: String, width: Int, height: Int, completion: @escaping PhotoWebServiceCompletion) {

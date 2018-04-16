@@ -10,7 +10,12 @@ import Foundation
 import Moya
 import Result
 
-public class PhotoRequest {
+public protocol PhotoRequestProtocol {
+    func send(photoId: String, width: Int, height: Int, completion: @escaping Moya.Completion)
+    func cancel()
+}
+
+public class PhotoRequest: PhotoRequestProtocol {
 
     private let provider: MoyaProvider<PhotoEndpoint>
     private var cancellable: Cancellable?
