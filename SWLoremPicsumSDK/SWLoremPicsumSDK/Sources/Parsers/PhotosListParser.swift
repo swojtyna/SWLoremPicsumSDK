@@ -11,7 +11,11 @@ import Result
 
 public typealias PhotosListParserCompletion = (_ result: Result<[PhotoElement], SWError>) -> Void
 
-class PhotosListParser {
+public protocol PhotosListParserProtocol {
+    func parse(_ data: Data, completion: PhotosListParserCompletion)
+}
+
+class PhotosListParser: PhotosListParserProtocol {
 
     func parse(_ data: Data, completion: PhotosListParserCompletion) {
         guard let photosList = try? JSONDecoder().decode([PhotoElement].self, from: data) else {

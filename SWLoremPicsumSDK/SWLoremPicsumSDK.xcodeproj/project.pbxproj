@@ -20,8 +20,10 @@
 		A26CAFCB20853B050008C128 /* PhotoRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFCA20853B050008C128 /* PhotoRequestMock.swift */; };
 		A26CAFCD20853DBB0008C128 /* PhotoParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFCC20853DBB0008C128 /* PhotoParserMock.swift */; };
 		A26CAFCF20853EAA0008C128 /* PhotoWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFCE20853EAA0008C128 /* PhotoWebServiceTests.swift */; };
+		A26CAFD4208545A40008C128 /* PhotosListRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFD3208545A40008C128 /* PhotosListRequestMock.swift */; };
+		A26CAFD62085476E0008C128 /* PhotosListParserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFD52085476E0008C128 /* PhotosListParserMock.swift */; };
+		A26CAFD8208549300008C128 /* PhotosListWebServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFD7208549300008C128 /* PhotosListWebServiceTests.swift */; };
 		A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */; };
-		A26F9C232072339E00795679 /* SWLoremPicsumSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */; };
 		A26F9C252072339E00795679 /* SWLoremPicsumSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3320723B5F00795679 /* PhotoWebService.swift */; };
 		A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F9C3520723B8800795679 /* PhotosListWebService.swift */; };
@@ -59,11 +61,13 @@
 		A26CAFCA20853B050008C128 /* PhotoRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequestMock.swift; sourceTree = "<group>"; };
 		A26CAFCC20853DBB0008C128 /* PhotoParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoParserMock.swift; sourceTree = "<group>"; };
 		A26CAFCE20853EAA0008C128 /* PhotoWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebServiceTests.swift; sourceTree = "<group>"; };
+		A26CAFD3208545A40008C128 /* PhotosListRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListRequestMock.swift; sourceTree = "<group>"; };
+		A26CAFD52085476E0008C128 /* PhotosListParserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListParserMock.swift; sourceTree = "<group>"; };
+		A26CAFD7208549300008C128 /* PhotosListWebServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListWebServiceTests.swift; sourceTree = "<group>"; };
 		A26F9C142072339E00795679 /* SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26F9C172072339E00795679 /* SWLoremPicsumSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWLoremPicsumSDK.h; sourceTree = "<group>"; };
 		A26F9C182072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26F9C1D2072339E00795679 /* SWLoremPicsumSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWLoremPicsumSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWLoremPicsumSDKTests.swift; sourceTree = "<group>"; };
 		A26F9C242072339E00795679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26F9C3320723B5F00795679 /* PhotoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebService.swift; sourceTree = "<group>"; };
 		A26F9C3520723B8800795679 /* PhotosListWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListWebService.swift; sourceTree = "<group>"; };
@@ -166,8 +170,8 @@
 		A26CAFC8208539540008C128 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				A26CAFC920853ADE0008C128 /* Mocks */,
-				A26CAFCE20853EAA0008C128 /* PhotoWebServiceTests.swift */,
+				A26CAFD0208545150008C128 /* PhotoWebService */,
+				A26CAFD1208545240008C128 /* PhotosListWebService */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -177,6 +181,33 @@
 			children = (
 				A26CAFCA20853B050008C128 /* PhotoRequestMock.swift */,
 				A26CAFCC20853DBB0008C128 /* PhotoParserMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A26CAFD0208545150008C128 /* PhotoWebService */ = {
+			isa = PBXGroup;
+			children = (
+				A26CAFC920853ADE0008C128 /* Mocks */,
+				A26CAFCE20853EAA0008C128 /* PhotoWebServiceTests.swift */,
+			);
+			path = PhotoWebService;
+			sourceTree = "<group>";
+		};
+		A26CAFD1208545240008C128 /* PhotosListWebService */ = {
+			isa = PBXGroup;
+			children = (
+				A26CAFD22085453A0008C128 /* Mocks */,
+				A26CAFD7208549300008C128 /* PhotosListWebServiceTests.swift */,
+			);
+			path = PhotosListWebService;
+			sourceTree = "<group>";
+		};
+		A26CAFD22085453A0008C128 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A26CAFD3208545A40008C128 /* PhotosListRequestMock.swift */,
+				A26CAFD52085476E0008C128 /* PhotosListParserMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -214,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				A243C02E2083F0320094E8CB /* Resources */,
-				A26F9C222072339E00795679 /* SWLoremPicsumSDKTests.swift */,
 				A26CAFC8208539540008C128 /* Features */,
 				A26CAFC6208537E40008C128 /* Networking */,
 				A26CAFC7208537F00008C128 /* Parsers */,
@@ -539,10 +569,12 @@
 			files = (
 				A26CAFCB20853B050008C128 /* PhotoRequestMock.swift in Sources */,
 				A26CAFCF20853EAA0008C128 /* PhotoWebServiceTests.swift in Sources */,
+				A26CAFD4208545A40008C128 /* PhotosListRequestMock.swift in Sources */,
 				A243C02D2083EE980094E8CB /* PhotoRequestTests.swift in Sources */,
 				A26CAFC5208537DE0008C128 /* PhotosListParserTests.swift in Sources */,
+				A26CAFD8208549300008C128 /* PhotosListWebServiceTests.swift in Sources */,
 				A26CAFCD20853DBB0008C128 /* PhotoParserMock.swift in Sources */,
-				A26F9C232072339E00795679 /* SWLoremPicsumSDKTests.swift in Sources */,
+				A26CAFD62085476E0008C128 /* PhotosListParserMock.swift in Sources */,
 				A23D173420852C8D006C91FB /* PhotosListRequestTests.swift in Sources */,
 				A26CAFC3208532D00008C128 /* PhotoParserTests.swift in Sources */,
 			);

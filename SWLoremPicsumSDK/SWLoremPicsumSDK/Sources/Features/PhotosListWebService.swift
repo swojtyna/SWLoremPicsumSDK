@@ -14,12 +14,16 @@ public typealias PhotosListWebServiceCompletion = (_ result: Result<[PhotoElemen
 
 public class PhotosListWebService {
 
-    private let request: PhotosListRequest
-    private let parser: PhotosListParser
+    private let request: PhotosListRequestProtocol
+    private let parser: PhotosListParserProtocol
 
-    public init() {
-        request = PhotosListRequest()
-        parser = PhotosListParser()
+    public init(request: PhotosListRequestProtocol, parser: PhotosListParserProtocol) {
+        self.request = request
+        self.parser = parser
+    }
+
+    public convenience init() {
+        self.init(request: PhotosListRequest(), parser: PhotosListParser())
     }
 
     public func photosList(completion: @escaping PhotosListWebServiceCompletion) {
