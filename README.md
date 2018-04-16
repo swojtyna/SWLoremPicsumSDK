@@ -8,17 +8,15 @@ This is simple SDK written in Swift and allows to easy get photos from https://p
 It is really simple. You can access an API like this:
 
 ```swift
-
- PhotoWebService().photo(photoId: "5", width: 200, height: 500) { result in
-            switch result {
-            case .success(let image):
-                print("👻 Recived image: \(image)")
-                // do something with the image
-            case .failure(let error):
-                print("💣 Error: \(error)")
-                // this means there was a some problem with request
-            }
-        }
+PhotoWebService().photo(photoId: "5", width: 200, height: 500) { result in
+    switch result {
+    case .success(let image):
+        print("👻 Recived image: \(image)")
+        // do something with the image
+    case .failure(let error):
+        // this means there was a some problem with request
+    }
+}
 ```
 
 ## Sample Project
