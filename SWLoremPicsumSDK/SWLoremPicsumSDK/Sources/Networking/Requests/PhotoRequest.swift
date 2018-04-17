@@ -25,7 +25,7 @@ public class PhotoRequest: PhotoRequestProtocol {
     }
 
     public func send(photoId: String, width: Int, height: Int, completion: @escaping Moya.Completion) {
-        provider.request(.photo(photoId: photoId, width: width, height: height), completion: completion)
+        cancellable = provider.request(.photo(photoId: photoId, width: width, height: height), completion: completion)
     }
 
     public func cancel() {

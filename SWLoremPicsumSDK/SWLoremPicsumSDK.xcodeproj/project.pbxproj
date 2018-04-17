@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */; };
 		228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */; };
+		A235A70E208683A200B94F44 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235A70C208683A200B94F44 /* PhotoRequest.swift */; };
+		A235A70F208683A200B94F44 /* PhotosListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235A70D208683A200B94F44 /* PhotosListRequest.swift */; };
 		A23D173420852C8D006C91FB /* PhotosListRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D173320852C8D006C91FB /* PhotosListRequestTests.swift */; };
 		A23D173620852DF6006C91FB /* example_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A23D173520852DF6006C91FB /* example_list.json */; };
-		A243C0292083E1C80094E8CB /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243C0282083E1C80094E8CB /* PhotoRequest.swift */; };
-		A243C02B2083E71E0094E8CB /* PhotosListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */; };
 		A243C02D2083EE980094E8CB /* PhotoRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243C02C2083EE980094E8CB /* PhotoRequestTests.swift */; };
 		A243C0302083F0600094E8CB /* photo_200_300_id2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A243C02F2083F0600094E8CB /* photo_200_300_id2.jpg */; };
 		A26CAFC3208532D00008C128 /* PhotoParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CAFC2208532D00008C128 /* PhotoParserTests.swift */; };
@@ -50,10 +50,10 @@
 		78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A235A70C208683A200B94F44 /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
+		A235A70D208683A200B94F44 /* PhotosListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListRequest.swift; sourceTree = "<group>"; };
 		A23D173320852C8D006C91FB /* PhotosListRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListRequestTests.swift; sourceTree = "<group>"; };
 		A23D173520852DF6006C91FB /* example_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example_list.json; sourceTree = "<group>"; };
-		A243C0282083E1C80094E8CB /* PhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
-		A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListRequest.swift; sourceTree = "<group>"; };
 		A243C02C2083EE980094E8CB /* PhotoRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequestTests.swift; sourceTree = "<group>"; };
 		A243C02F2083F0600094E8CB /* photo_200_300_id2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo_200_300_id2.jpg; sourceTree = "<group>"; };
 		A26CAFC2208532D00008C128 /* PhotoParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoParserTests.swift; sourceTree = "<group>"; };
@@ -113,6 +113,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A235A70B208683A200B94F44 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A235A70C208683A200B94F44 /* PhotoRequest.swift */,
+				A235A70D208683A200B94F44 /* PhotosListRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		A243C0262083E18D0094E8CB /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,16 +129,6 @@
 				A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */,
 			);
 			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		A243C0272083E1930094E8CB /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				A243C0282083E1C80094E8CB /* PhotoRequest.swift */,
-				A243C02A2083E71E0094E8CB /* PhotosListRequest.swift */,
-			);
-			name = Requests;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A243C02E2083F0320094E8CB /* Resources */ = {
@@ -312,7 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				A243C0262083E18D0094E8CB /* Endpoints */,
-				A243C0272083E1930094E8CB /* Requests */,
+				A235A70B208683A200B94F44 /* Requests */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -554,11 +553,11 @@
 				A2960C1120776CCF00A05770 /* PhotoEndpoint.swift in Sources */,
 				A2960C1320776D1400A05770 /* PhotosListEndpoint.swift in Sources */,
 				A26F9C3420723B5F00795679 /* PhotoWebService.swift in Sources */,
-				A243C02B2083E71E0094E8CB /* PhotosListRequest.swift in Sources */,
+				A235A70F208683A200B94F44 /* PhotosListRequest.swift in Sources */,
 				A274B058207C13FE00A57D0E /* SWError.swift in Sources */,
 				A26F9C3620723B8800795679 /* PhotosListWebService.swift in Sources */,
 				A2960C152077715100A05770 /* PhotoParser.swift in Sources */,
-				A243C0292083E1C80094E8CB /* PhotoRequest.swift in Sources */,
+				A235A70E208683A200B94F44 /* PhotoRequest.swift in Sources */,
 				A2960C172077715F00A05770 /* PhotosListParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

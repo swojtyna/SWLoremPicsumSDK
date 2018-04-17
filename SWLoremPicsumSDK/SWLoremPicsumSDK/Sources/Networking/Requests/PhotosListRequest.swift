@@ -25,7 +25,7 @@ public class PhotosListRequest: PhotosListRequestProtocol {
     }
 
     public func send(completion: @escaping Moya.Completion) {
-        provider.request(.photosList, completion: completion)
+        cancellable = provider.request(.photosList, completion: completion)
     }
 
     public func cancel() {

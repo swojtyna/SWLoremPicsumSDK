@@ -1,7 +1,7 @@
 # SWLoremPicsumSDK
 Lorem Ipsum... but for photos. In Swift.
 
-This is simple SDK written in Swift and allows to easy get photos from https://picsum.photos/
+This is simple SDK written in Swift that allows to easy get photos from https://picsum.photos/
 
 ## Usage
 
