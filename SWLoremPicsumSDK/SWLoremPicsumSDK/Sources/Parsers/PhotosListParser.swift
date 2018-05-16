@@ -18,13 +18,15 @@ public protocol PhotosListParserProtocol {
 class PhotosListParser: PhotosListParserProtocol {
 
     func parse(_ data: Data, completion: PhotosListParserCompletion) {
-        guard let photosList = try? JSONDecoder().decode([PhotoElement].self, from: data) else {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+
+        do {
+            let photosList = try decoder.decode([PhotoElement].self, from: data)
+            completion(.success(photosList))
+        } catch {
             completion(.failure(.parserError(reason: .objectMapping)))
-
-            return
         }
-
-        completion(.success(photosList))
     }
 
 }

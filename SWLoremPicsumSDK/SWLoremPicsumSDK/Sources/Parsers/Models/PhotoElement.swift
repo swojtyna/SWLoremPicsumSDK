@@ -18,11 +18,7 @@ public struct PhotoElement: Codable {
     let width, height: Int
     let filename: String
     let id: Int
-    let author, authorURL, postURL: String
-
-    enum CodingKeys: String, CodingKey {
-        case format, width, height, filename, id, author
-        case authorURL = "author_url"
-        case postURL = "post_url"
-    }
+    let author: String
+    let authorUrl: String
+    let postUrl: String
 }
