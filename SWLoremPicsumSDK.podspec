@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SWLoremPicsumSDK"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "Lorem Ipsum... but for photos. SDK in Swift for https://picsum.photos/"
   s.description  = <<-DESC
   This is simple SDK written in Swift and it allows to easy get photos from https://picsum.photos/
