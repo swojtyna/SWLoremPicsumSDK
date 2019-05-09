@@ -12,5 +12,4 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/swojtyna/SWLoremPicsumSDK.git", :tag => s.version }
   s.source_files  = "SWLoremPicsumSDK/SWLoremPicsumSDK/Sources/**/*"
   s.dependency "Moya", "~> 13.0"
-  s.swift_version = "5.0"
 end
