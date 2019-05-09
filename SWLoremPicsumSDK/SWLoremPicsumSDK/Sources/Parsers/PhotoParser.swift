@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Result
 
 public typealias PhotoParserCompletion = (_ result: Result<UIImage, SWError>) -> Void
 

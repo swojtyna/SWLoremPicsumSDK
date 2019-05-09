@@ -20,7 +20,7 @@ extension PhotoEndpoint: TargetType {
     var path: String {
         switch self {
         case .photo(let photoId, let width, let height):
-            return "/\(width)/\(height)?image=\(photoId)"
+            return "id/\(photoId)/\(width)/\(height)"
         }
     }
 

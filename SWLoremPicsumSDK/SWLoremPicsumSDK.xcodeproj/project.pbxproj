@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */; };
-		228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */; };
+		40DC5B8F133625A3A26DCACC /* Pods_SWLoremPicsumSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D55D88C78B254AD2952A62 /* Pods_SWLoremPicsumSDK.framework */; };
 		A235A70E208683A200B94F44 /* PhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235A70C208683A200B94F44 /* PhotoRequest.swift */; };
 		A235A70F208683A200B94F44 /* PhotosListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235A70D208683A200B94F44 /* PhotosListRequest.swift */; };
 		A23D173420852C8D006C91FB /* PhotosListRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D173320852C8D006C91FB /* PhotosListRequestTests.swift */; };
@@ -33,6 +32,7 @@
 		A2960C1320776D1400A05770 /* PhotosListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */; };
 		A2960C152077715100A05770 /* PhotoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C142077715100A05770 /* PhotoParser.swift */; };
 		A2960C172077715F00A05770 /* PhotosListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2960C162077715F00A05770 /* PhotosListParser.swift */; };
+		E43D398DBE4B57EC083EDC79 /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2107AAAED5885843A7F2D63D /* Pods_SWLoremPicsumSDKTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D55D88C78B254AD2952A62 /* Pods_SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2107AAAED5885843A7F2D63D /* Pods_SWLoremPicsumSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C8FDC20F4D99B49BF60D9A /* Pods-SWLoremPicsumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.release.xcconfig"; path = "Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.release.xcconfig"; sourceTree = "<group>"; };
+		648FE394738C3027BCB396EB /* Pods-SWLoremPicsumSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.release.xcconfig"; path = "Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E9FFA2E4B8D3AADEE1A9255 /* Pods-SWLoremPicsumSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.debug.xcconfig"; path = "Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		A235A70C208683A200B94F44 /* PhotoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRequest.swift; sourceTree = "<group>"; };
 		A235A70D208683A200B94F44 /* PhotosListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosListRequest.swift; sourceTree = "<group>"; };
 		A23D173320852C8D006C91FB /* PhotosListRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListRequestTests.swift; sourceTree = "<group>"; };
@@ -77,8 +78,7 @@
 		A2960C1220776D1400A05770 /* PhotosListEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListEndpoint.swift; sourceTree = "<group>"; };
 		A2960C142077715100A05770 /* PhotoParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoParser.swift; sourceTree = "<group>"; };
 		A2960C162077715F00A05770 /* PhotosListParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListParser.swift; sourceTree = "<group>"; };
-		DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWLoremPicsumSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK.release.xcconfig"; sourceTree = "<group>"; };
+		C365F4D532FED62C8E95AE22 /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWLoremPicsumSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228DB9766376259CCC1FAF75 /* Pods_SWLoremPicsumSDK.framework in Frameworks */,
+				40DC5B8F133625A3A26DCACC /* Pods_SWLoremPicsumSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,22 +95,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A26F9C1E2072339E00795679 /* SWLoremPicsumSDK.framework in Frameworks */,
-				130B530DD715279722E8011B /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */,
+				E43D398DBE4B57EC083EDC79 /* Pods_SWLoremPicsumSDKTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8D3867E54FE7C97846B7A86C /* Pods */ = {
+		9721C7FC0A49E5493F794484 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */,
-				E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */,
-				9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */,
-				631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */,
+				09D55D88C78B254AD2952A62 /* Pods_SWLoremPicsumSDK.framework */,
+				2107AAAED5885843A7F2D63D /* Pods_SWLoremPicsumSDKTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A235A70B208683A200B94F44 /* Requests */ = {
@@ -217,8 +215,8 @@
 				A26F9C162072339E00795679 /* SWLoremPicsumSDK */,
 				A26F9C212072339E00795679 /* SWLoremPicsumSDKTests */,
 				A26F9C152072339E00795679 /* Products */,
-				8D3867E54FE7C97846B7A86C /* Pods */,
-				F0FBBDA89E1FC604411DB0D0 /* Frameworks */,
+				B35364CA2B05AECF7424E236 /* Pods */,
+				9721C7FC0A49E5493F794484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,13 +314,16 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		F0FBBDA89E1FC604411DB0D0 /* Frameworks */ = {
+		B35364CA2B05AECF7424E236 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DDBB9BBEBC7FF0BE0EFB979F /* Pods_SWLoremPicsumSDK.framework */,
-				9D12E9729236603EC20C00A9 /* Pods_SWLoremPicsumSDKTests.framework */,
+				7E9FFA2E4B8D3AADEE1A9255 /* Pods-SWLoremPicsumSDK.debug.xcconfig */,
+				44C8FDC20F4D99B49BF60D9A /* Pods-SWLoremPicsumSDK.release.xcconfig */,
+				C365F4D532FED62C8E95AE22 /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */,
+				648FE394738C3027BCB396EB /* Pods-SWLoremPicsumSDKTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,13 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26F9C282072339E00795679 /* Build configuration list for PBXNativeTarget "SWLoremPicsumSDK" */;
 			buildPhases = (
-				B664A03875E4829C28523E71 /* [CP] Check Pods Manifest.lock */,
+				8E97037A7B9FD938D6C9AD41 /* [CP] Check Pods Manifest.lock */,
 				A26F9C0F2072339E00795679 /* Sources */,
 				A26F9C102072339E00795679 /* Frameworks */,
 				A26F9C112072339E00795679 /* Headers */,
 				A26F9C122072339E00795679 /* Resources */,
 				A26F9C2E2072353B00795679 /* SwiftLint */,
-				1951778AAB797BF6FC9940D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,12 +364,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A26F9C2B2072339E00795679 /* Build configuration list for PBXNativeTarget "SWLoremPicsumSDKTests" */;
 			buildPhases = (
-				6A00432242061CC018ED4EFF /* [CP] Check Pods Manifest.lock */,
+				19229BE9B3505A5E7910C39F /* [CP] Check Pods Manifest.lock */,
 				A26F9C192072339E00795679 /* Sources */,
 				A26F9C1A2072339E00795679 /* Frameworks */,
 				A26F9C1B2072339E00795679 /* Resources */,
-				AF07D767E0F18D9D43CE35E8 /* [CP] Embed Pods Frameworks */,
-				6917455B65FAD25225DCB9B1 /* [CP] Copy Pods Resources */,
+				18DA455702C823DB9CBACE86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,10 +392,11 @@
 				TargetAttributes = {
 					A26F9C132072339E00795679 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0930;
+						LastSwiftMigration = 1020;
 					};
 					A26F9C1C2072339E00795679 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -438,48 +438,72 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1951778AAB797BF6FC9940D0 /* [CP] Copy Pods Resources */ = {
+		18DA455702C823DB9CBACE86 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDK/Pods-SWLoremPicsumSDK-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6917455B65FAD25225DCB9B1 /* [CP] Copy Pods Resources */ = {
+		19229BE9B3505A5E7910C39F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A00432242061CC018ED4EFF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SWLoremPicsumSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E97037A7B9FD938D6C9AD41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWLoremPicsumSDK-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,48 +523,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-		};
-		AF07D767E0F18D9D43CE35E8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWLoremPicsumSDKTests/Pods-SWLoremPicsumSDKTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B664A03875E4829C28523E71 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SWLoremPicsumSDK-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -712,7 +694,7 @@
 		};
 		A26F9C292072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78600C7AF69288D2465FB4AC /* Pods-SWLoremPicsumSDK.debug.xcconfig */;
+			baseConfigurationReference = 7E9FFA2E4B8D3AADEE1A9255 /* Pods-SWLoremPicsumSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -735,14 +717,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "SWLoremPicsumSDK/Supporting Files/$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A26F9C2A2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6B591D65C637D3B67231EE8 /* Pods-SWLoremPicsumSDK.release.xcconfig */;
+			baseConfigurationReference = 44C8FDC20F4D99B49BF60D9A /* Pods-SWLoremPicsumSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -764,14 +746,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "SWLoremPicsumSDK/Supporting Files/$(SWIFT_MODULE_NAME)-Swift.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		A26F9C2C2072339E00795679 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A4306B8E148E1591B10753C /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */;
+			baseConfigurationReference = C365F4D532FED62C8E95AE22 /* Pods-SWLoremPicsumSDKTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -783,14 +765,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A26F9C2D2072339E00795679 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 631659D7159EEF75FDEE37DA /* Pods-SWLoremPicsumSDKTests.release.xcconfig */;
+			baseConfigurationReference = 648FE394738C3027BCB396EB /* Pods-SWLoremPicsumSDKTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,7 +784,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = github.com.swojtyna.SWLoremPicsumSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

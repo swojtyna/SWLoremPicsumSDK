@@ -3,7 +3,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'Example' do
-  pod 'SWLoremPicsumSDK' # The best SDK for for https://picsum.photos/
+  pod 'SWLoremPicsumSDK', :path => './../' # The best SDK for for https://picsum.photos/
 end
 
 

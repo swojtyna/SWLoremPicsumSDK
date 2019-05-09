@@ -8,17 +8,16 @@
 
 import Foundation
 
-enum Format: String, Codable {
-    case jpeg
-    case png
-}
-
 public struct PhotoElement: Codable {
-    let format: Format
-    let width, height: Int
-    let filename: String
-    let id: Int
+    let id: String
     let author: String
-    let authorUrl: String
-    let postUrl: String
+    let width: Int
+    let height: Int
+    let url: String
+    let downloadURL: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, author, width, height, url
+        case downloadURL = "download_url"
+    }
 }

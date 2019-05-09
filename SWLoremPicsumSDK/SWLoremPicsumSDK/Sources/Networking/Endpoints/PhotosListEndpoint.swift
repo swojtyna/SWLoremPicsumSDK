@@ -20,7 +20,7 @@ extension PhotosListEndpoint: TargetType {
     var path: String {
         switch self {
         case .photosList:
-            return "/list"
+            return "v2/list"
         }
     }
 

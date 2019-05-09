@@ -1,30 +1,33 @@
 PODS:
-  - Alamofire (4.7.2)
-  - Moya (11.0.2):
-    - Moya/Core (= 11.0.2)
-  - Moya/Core (11.0.2):
+  - Alamofire (4.8.2)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
     - Alamofire (~> 4.1)
-    - Result (~> 3.0)
-  - Result (3.2.4)
-  - SWLoremPicsumSDK (0.0.3):
-    - Moya (~> 11.0)
+    - Result (~> 4.1)
+  - Result (4.1.0)
+  - SWLoremPicsumSDK (0.0.4):
+    - Moya (~> 13.0)
 
 DEPENDENCIES:
-  - SWLoremPicsumSDK
+  - SWLoremPicsumSDK (from `./../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Moya
     - Result
-    - SWLoremPicsumSDK
+
+EXTERNAL SOURCES:
+  SWLoremPicsumSDK:
+    :path: "./../"
 
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  Moya: a725035953bc1c0eb1be505ab903984501d82440
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  SWLoremPicsumSDK: 17c821aafebc79a5788f7488813e0d5eab05a740
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SWLoremPicsumSDK: d7df111f3bcd57e2ad0bae61b70304301e2e6179
 
-PODFILE CHECKSUM: db6ae326e69c919da0fcf65398402357a242aecb
+PODFILE CHECKSUM: 2e2dd8183d365cbed72bceb955abe562587889eb
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0

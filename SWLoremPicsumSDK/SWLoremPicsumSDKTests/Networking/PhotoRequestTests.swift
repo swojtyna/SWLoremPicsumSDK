@@ -19,7 +19,7 @@ class PhotoRequestTests: XCTestCase {
         let height = 300
         let photoId = "2"
         var didStubBlockWasCalled = false
-        let urlAbsolutePath = "https://picsum.photos//\(width)/\(height)%3Fimage=\(photoId)"
+        let urlAbsolutePath = "https://picsum.photos/id/\(photoId)/\(width)/\(height)"
 
         stub(condition: isAbsoluteURLString(urlAbsolutePath)) { _ in
             guard let filePath = OHPathForFile("photo_200_300_id2.jpg", type(of: self)) else {
@@ -54,7 +54,7 @@ class PhotoRequestTests: XCTestCase {
         let height = 300
         let photoId = "2"
         var didStubBlockWasCalled = false
-        let path = "https://picsum.photos//\(width)/\(height)%3Fimage=\(photoId)"
+        let path = "https://picsum.photos/id/\(photoId)/\(width)/\(height)"
 
         stub(condition: isAbsoluteURLString(path)) { _ in
             didStubBlockWasCalled = true

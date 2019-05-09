@@ -25,7 +25,7 @@ class PhotosListParserMock: PhotosListParserProtocol {
             completion(.success([]))
         } else {
             didCompletionFailureCalled = true
-            completion(.failure(.parserError(reason: .objectMapping)))
+            completion(.failure(.parserError(reason: .objectMapping(error: NSError(domain: "PhotosListParserMockError", code: -999, userInfo: nil)))))
         }
     }
 

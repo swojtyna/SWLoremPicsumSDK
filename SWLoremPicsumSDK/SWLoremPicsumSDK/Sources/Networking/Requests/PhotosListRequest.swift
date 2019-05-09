@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 
 public protocol PhotosListRequestProtocol {
     func send(completion: @escaping Moya.Completion)

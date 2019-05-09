@@ -16,7 +16,7 @@ class PhotosListRequestTests: XCTestCase {
         // given
         let testExpectation = expectation(description: "Get photos list with success")
         var didStubBlockWasCalled = false
-        let urlAbsolutePath = "https://picsum.photos//list"
+        let urlAbsolutePath = "https://picsum.photos/v2/list"
 
         stub(condition: isAbsoluteURLString(urlAbsolutePath)) { _ in
             guard let filePath = OHPathForFile("example_list.json", type(of: self)) else {
@@ -49,7 +49,7 @@ class PhotosListRequestTests: XCTestCase {
         // given
         let testExpectation = expectation(description: "Get photos list with fail 500 response")
         var didStubBlockWasCalled = false
-        let path = "https://picsum.photos//list"
+        let path = "https://picsum.photos/v2/list"
 
         stub(condition: isAbsoluteURLString(path)) { _ in
             didStubBlockWasCalled = true

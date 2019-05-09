@@ -17,7 +17,7 @@ public enum SWError: Error {
 
     public enum ParserReason {
         case imageMapping
-        case objectMapping
+        case objectMapping(error: Error)
     }
 
     case webServiceError(reason: WebServiceReason)

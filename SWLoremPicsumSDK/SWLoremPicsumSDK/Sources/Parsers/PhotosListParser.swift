@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Result
 
 public typealias PhotosListParserCompletion = (_ result: Result<[PhotoElement], SWError>) -> Void
 
@@ -19,13 +18,12 @@ class PhotosListParser: PhotosListParserProtocol {
 
     func parse(_ data: Data, completion: PhotosListParserCompletion) {
         let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
 
         do {
             let photosList = try decoder.decode([PhotoElement].self, from: data)
             completion(.success(photosList))
-        } catch {
-            completion(.failure(.parserError(reason: .objectMapping)))
+        } catch let error {
+            completion(.failure(.parserError(reason: .objectMapping(error: error))))
         }
     }
 

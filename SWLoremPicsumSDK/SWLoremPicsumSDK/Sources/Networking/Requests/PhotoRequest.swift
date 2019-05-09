@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 
 public protocol PhotoRequestProtocol {
     func send(photoId: String, width: Int, height: Int, completion: @escaping Moya.Completion)

@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import Result
 
 public typealias PhotosListWebServiceCompletion = (_ result: Result<[PhotoElement], SWError>) -> Void
 

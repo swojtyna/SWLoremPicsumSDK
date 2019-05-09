@@ -1,9 +1,9 @@
-platform :ios, '10.0'
+platform :ios, '12.0'
 inhibit_all_warnings!
 use_frameworks!
 
 def standard_pods
-  pod 'Moya', '~> 11.0' # Network abstraction layer written in Swift. https://moya.github.io
+  pod 'Moya', '~> 13.0' # Network abstraction layer written in Swift. https://moya.github.io
 end
 
 target 'SWLoremPicsumSDK' do

@@ -11,14 +11,24 @@ import SWLoremPicsumSDK
 
 class ViewController: UIViewController {
 
-    let service = PhotoWebService()
+    let photoService = PhotoWebService()
+    let listService = PhotosListWebService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("Welcome 😀")
 
-        service.photo(photoId: "5", width: 200, height: 500) { [weak self] result in
+        listService.photosList { result in
+            switch result {
+            case .success(let photos):
+                print("👻 Photos count: \(photos.count)")
+            case .failure(let error):
+                print("💣 Error: \(error)")
+            }
+        }
+
+        photoService.photo(photoId: "5", width: 200, height: 500) { [weak self] result in
             switch result {
             case .success(let image):
                 print("👻 Recived image: \(image)")
